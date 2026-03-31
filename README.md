@@ -1,49 +1,147 @@
-# AI Code Reviewer 🤖
+# AI Code Reviewer
 
-An intelligent, AI-powered code analysis tool designed to help developers write better, cleaner, and more secure code. This application leverages **Streamlit** for the frontend and **Hugging Face models** (Qwen 2.5) via **LangChain** to provide professional-grade insights across multiple languages.
+An AI-powered code analysis tool that reviews, explains, and improves code using Large Language Models (LLMs).
+Built with **Streamlit (frontend)** and Python-based backend logic.
 
-## 🚀 Key Features
+---
 
-*   **🌍 Multi-Language Support**: Professional reviews for **Python, JavaScript, TypeScript, Java, C++, Go, and Rust**.
-*   **🎨 Customizable Ace Editor**: Integrated professional editor with **10+ Themes** (Monokai, Nord, Solarized), dynamic **Font Resizing**, and **Keybindings** (VS Code, Vim, Emacs).
-*   **✨ One-Click AI Refactoring**: Automatically optimizes your code for performance, readability, and DRY principles.
-*   **🧪 Automated Unit Test Generation**: Generates comprehensive tests tailored to your specific language and framework (e.g., `pytest`, `Jest`, `JUnit`).
-*   **📊 Visual Analytics Dashboard**: Interactive charts (Plotly) to track quality trends, language distribution, and score history.
-*   **📝 PR Summary Generator**: Automatically writes professional GitHub/GitLab Pull Request descriptions.
-*   **📖 Junior-Friendly Explainer**: Break down complex logic line-by-line for easier learning and onboarding.
-*   **⚙️ CI/CD Workflow Builder**: Generate GitHub Actions YAML files to automate reviews in your repository.
-*   **🛡️ Security & Performance Audit**: Deep scans for OWASP vulnerabilities and performance bottlenecks.
-*   **🔍 Context Search**: Direct links to StackOverflow and Google Documentation for identified issues.
-*   **💬 AI Assistant (with Memory)**: Multi-turn chat to ask follow-up questions about the code review.
+## 🚀 Features
 
-## 🛠️ Installation & Setup
+* 🔍 AI Code Review (bugs, improvements, best practices)
+* 🧪 Unit Test Generation
+* ✨ Code Refactoring
+* 📖 Code Explanation
+* 💬 AI Assistant (chat with your code)
+* 📊 Analysis history tracking
 
-### Prerequisites
-*   Python 3.8+
-*   A Hugging Face Account & Access Token
+---
 
-### 1. Clone & Setup
+## 📂 Project Structure
+
 ```bash
-git clone https://github.com/PratikHarkare06/AI-Code-Reviewier.git
+AI-Code-Reviewier/
+│
+├── app.py                     # Streamlit frontend (UI + main logic)
+├── ai_suggestions.py          # AI interaction (LLM calls, prompts)
+├── code_parser.py             # Code parsing & structure analysis
+├── error_detector.py          # Static error detection
+│
+├── history.json               # Stores past analysis results
+├── requirements.txt           # Dependencies
+├── README.md                  # Project documentation
+│
+├── .env                       # API keys (not committed)
+├── .gitignore                 # Git ignore rules
+│
+├── .devcontainer/             # Dev container config
+├── .git/                      # Git metadata
+├── __pycache__/               # Python cache (auto-generated)
+└── .DS_Store                  # System file (ignore)
+```
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone repository
+
+```bash
+git clone https://github.com/your-username/AI-Code-Reviewier.git
 cd AI-Code-Reviewier
+```
+
+---
+
+### 2. Create virtual environment
+
+```bash
+python -m venv venv
+venv\Scripts\activate   # Windows
+```
+
+---
+
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-### 2. Configure Environment
-Create a `.env` file in the root directory:
-```ini
-HF_TOKEN=your_huggingface_access_token_here
+---
+
+### 4. Setup environment variables
+
+Create a `.env` file:
+
+```env
+HF_TOKEN=your_huggingface_api_key
 ```
 
-## 🏃‍♂️ Usage
+---
 
-1.  **Launch App**: `streamlit run app.py`
-2.  **Pick Theme & Language**: Adjust your editor settings and source language in the sidebar.
-3.  **Run Analysis**: Click **⚡ Run Analysis** to get a quality grade and line-by-line feedback.
-4.  **Explore Tabs**: Navigate through the **Assistant**, **Dashboard**, and **CI/CD Build** tabs to take full control of your codebase.
+## ▶️ Run the Application
 
-## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
+```bash
+python -m streamlit run app.py
+```
+
+👉 Open: http://localhost:8501
 
 ---
-Made with ❤️ by Pratik
+
+## 🔄 How It Works
+
+1. User writes code in the editor
+2. Code is analyzed using:
+
+   * `code_parser.py` (structure)
+   * `error_detector.py` (static issues)
+3. Code is sent to LLM via `ai_suggestions.py`
+4. AI generates:
+
+   * review
+   * improvements
+   * tests
+   * explanations
+5. Results are displayed in UI
+6. History is stored in `history.json`
+
+---
+
+## 🧠 Technologies Used
+
+* **Frontend:** Streamlit
+* **Backend Logic:** Python
+* **LLM Integration:** HuggingFace
+* **Data Storage:** JSON
+
+---
+
+## 💡 Key Concepts
+
+* Prompt Engineering
+* AI-assisted Code Review
+* Session State Management
+* Modular Python Design
+
+---
+
+## 🚀 Future Improvements
+
+* FastAPI backend separation
+* RAG (Retrieval Augmented Generation)
+* GitHub repo analysis
+* Deployment (AWS / Render)
+* React frontend
+
+---
+
+## 👨‍💻 Author
+
+**Manas Arora**
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
