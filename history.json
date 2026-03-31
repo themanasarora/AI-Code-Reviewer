@@ -1,0 +1,72 @@
+[
+    {
+        "timestamp": "13:32:45",
+        "date": "2026-03-31",
+        "language": "Python",
+        "quality_grade": "N/A",
+        "code_snippet": "import streamlit as st\r\nfrom code_parser import parse_code\r\nfrom ai_suggessions import get_ai_sugges..."
+    },
+    {
+        "timestamp": "20:04:48",
+        "date": "2026-01-27",
+        "language": "Python",
+        "quality_grade": "8/10",
+        "code_snippet": "def check_number(n):\nprint(\"Checking number\")\n\n    if n > 0:\n        print(\"Positive\")\n    else:\n   ..."
+    },
+    {
+        "timestamp": "20:01:26",
+        "date": "2026-01-27",
+        "language": "Python",
+        "quality_grade": "8/10",
+        "code_snippet": "def check_number(n):\nprint(\"Checking number\")\n\n    if n > 0:\n        print(\"Positive\")\n    else:\n   ..."
+    },
+    {
+        "timestamp": "19:39:45",
+        "date": "2026-01-27",
+        "language": "Python",
+        "quality_grade": "8/10",
+        "code_snippet": "import math  # unused import\n\nx = 5\ny = 10  # unused variable\n\ndef multiply(a, b):\n    result = a * ..."
+    },
+    {
+        "timestamp": "18:42:07",
+        "date": "2026-01-27",
+        "language": "Python",
+        "quality_grade": "8/10",
+        "code_snippet": "import math  # unused import\n\nx = 5\ny = 10  # unused variable\n\ndef multiply(a, b):\n    result = a * ..."
+    },
+    {
+        "timestamp": "19:36:09",
+        "date": "2026-01-25",
+        "language": "Python",
+        "quality_grade": "8/10",
+        "code_snippet": "import math  # unused import\n\nx = 5\ny = 10  # unused variable\n\ndef multiply(a, b):\n    result = a * ..."
+    },
+    {
+        "timestamp": "19:06:29",
+        "date": "2026-01-25",
+        "language": "Python",
+        "quality_grade": "8/10",
+        "code_snippet": "import math  # unused import\n\nx = 5\ny = 10  # unused variable\n\ndef multiply(a, b):\n    result = a * ..."
+    },
+    {
+        "timestamp": "18:42:46",
+        "date": "2026-01-21",
+        "language": "Python",
+        "quality_grade": "8/10",
+        "code_snippet": "ef add_numbers(a, b)\n    result = a + b\n    return result\n\nx = 5\ny = \"10\"\n\nsum = add_numbers(x, y)\np..."
+    },
+    {
+        "timestamp": "18:39:25",
+        "date": "2026-01-21",
+        "language": "Python",
+        "quality_grade": "8/10",
+        "code_snippet": "ef add_numbers(a, b)\n    result = a + b\n    return result\n\nx = 5\ny = \"10\"\n\nsum = add_numbers(x, y)\np..."
+    },
+    {
+        "timestamp": "18:35:09",
+        "date": "2026-01-21",
+        "language": "Python",
+        "quality_grade": "8/10",
+        "code_snippet": "ef add_numbers(a, b)\n    result = a + b\n    return result\n\nx = 5\ny = \"10\"\n\nsum = add_numbers(x, y)\np..."
+    }
+]
